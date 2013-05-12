@@ -10,15 +10,14 @@
     <script src="Turbulenz/webgl/graphicsdevice.min.js" type="text/javascript"></script>
 </head>
 <body>
-    <body>
-    <canvas id="canvas" width="640" height="480"/>
-    <script>
-        var game = new AirFair.Game(new Turbulenz.Graphics(document.getElementById("canvas"), true));
-        game.start();
-    </script>
-
+    <body>    
     <h1>Air Fair</h1>
     <div id="content"></div>
     <canvas id="canvas" width="640" height="480" style="border: 1px solid black;" />
+
+    <script>
+        var game = new AirFair.Game(new Turbulenz.Graphics(document.getElementById("canvas"), true));
+            game.start();
+    </script>
 </body>
 </html>
