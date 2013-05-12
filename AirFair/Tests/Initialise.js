@@ -1,5 +1,5 @@
 ﻿///<reference path="/Scripts/qunit.js" />
-///<reference path="../Game.js"/>
+///<reference path="../AirFair/Game.js"/>
 
 QUnit.module("Initialise Tests");
 test("When game started Then draw background called", function () {
