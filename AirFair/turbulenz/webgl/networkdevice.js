@@ -38,4 +38,3 @@ WebGLNetworkDevice.create = function networkDeviceCreateFn() {
     /* params */ var nd = new WebGLNetworkDevice();
     return nd;
 };
-//@ sourceMappingURL=networkdevice.js.map

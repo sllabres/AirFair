@@ -3,7 +3,7 @@
 
 module Turbulenz {
     export class Graphics implements AirFair.IDrawGraphics {
-        constructor(engine: WebGLTurbulenzEngine) {            
+        constructor(engine: WebGLTurbulenzEngine) {
         }
 
         drawBackground() {

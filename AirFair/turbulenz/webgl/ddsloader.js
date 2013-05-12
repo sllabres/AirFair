@@ -806,4 +806,3 @@ DDSLoader.create = function ddsLoaderFn(params) {
     }
     return loader;
 };
-//@ sourceMappingURL=ddsloader.js.map
