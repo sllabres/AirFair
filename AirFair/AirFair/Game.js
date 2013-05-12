@@ -11,3 +11,4 @@ var AirFair;
     })();
     AirFair.Game = Game;    
 })(AirFair || (AirFair = {}));
+//@ sourceMappingURL=Game.js.map

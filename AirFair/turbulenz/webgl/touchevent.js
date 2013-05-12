@@ -13,3 +13,4 @@ var WebGLTouchEvent = (function () {
     return WebGLTouchEvent;
 })();
 ;
+//@ sourceMappingURL=touchevent.js.map

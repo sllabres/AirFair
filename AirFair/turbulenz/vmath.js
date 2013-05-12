@@ -4476,3 +4476,4 @@ if(typeof Float32Array !== "undefined") {
 if(TurbulenzEngine.hasOwnProperty('VMath')) {
     TurbulenzEngine.VMath = VMath;
 }
+//@ sourceMappingURL=vmath.js.map

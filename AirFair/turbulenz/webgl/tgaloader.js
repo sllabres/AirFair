@@ -485,3 +485,4 @@ TGALoader.create = function tgaLoaderFn(params) {
     }
     return loader;
 };
+//@ sourceMappingURL=tgaloader.js.map

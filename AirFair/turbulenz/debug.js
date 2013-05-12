@@ -63,3 +63,4 @@ var debug = {
         window.console.log(msg);
     }
 };
+//@ sourceMappingURL=debug.js.map
