@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{F232A751-2F2C-49E6-9150-760BEF1DBA35}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="HelloWorld.ts" />
+    <Content Include="Content\qunit.css" />
+    <Content Include="HelloWorld.js">
+      <DependentUpon>HelloWorld.ts</DependentUpon>
+    </Content>
+    <Content Include="HelloWorld.min.js">
+      <DependentUpon>HelloWorld.ts</DependentUpon>
+    </Content>
+    <Content Include="jslib\.mkdir" />
+    <Content Include="jslib\aabbtree.js" />
+    <Content Include="jslib\aabbtree.min.js" />
+    <Content Include="jslib\animation.js" />
+    <Content Include="jslib\animation.min.js" />
+    <Content Include="jslib\animationmanager.js" />
+    <Content Include="jslib\animationmanager.min.js" />
+    <Content Include="jslib\assetcache.js" />
+    <Content Include="jslib\assetcache.min.js" />
+    <Content Include="jslib\assettracker.js" />
+    <Content Include="jslib\assettracker.min.js" />
+    <Content Include="jslib\boxtree.js" />
+    <Content Include="jslib\boxtree.min.js" />
+    <Content Include="jslib\camera.js" />
+    <Content Include="jslib\camera.min.js" />
+    <Content Include="jslib\canvas.js" />
+    <Content Include="jslib\canvas.min.js" />
+    <Content Include="jslib\capturegraphicsdevice.js" />
+    <Content Include="jslib\capturegraphicsdevice.min.js" />
+    <Content Include="jslib\charactercontroller.js" />
+    <Content Include="jslib\charactercontroller.min.js" />
+    <Content Include="jslib\debug.js" />
+    <Content Include="jslib\debug.min.js" />
+    <Content Include="jslib\debuggingtools.js" />
+    <Content Include="jslib\debuggingtools.min.js" />
+    <Content Include="jslib\defaultrendering.js" />
+    <Content Include="jslib\defaultrendering.min.js" />
+    <Content Include="jslib\deferredrendering.js" />
+    <Content Include="jslib\deferredrendering.min.js" />
+    <Content Include="jslib\draw2d.js" />
+    <Content Include="jslib\draw2d.min.js" />
+    <Content Include="jslib\drawprimitives.js" />
+    <Content Include="jslib\drawprimitives.min.js" />
+    <Content Include="jslib\dumpindexbuffer.js" />
+    <Content Include="jslib\dumpindexbuffer.min.js" />
+    <Content Include="jslib\dumpshader.js" />
+    <Content Include="jslib\dumpshader.min.js" />
+    <Content Include="jslib\dumptexture.js" />
+    <Content Include="jslib\dumptexture.min.js" />
+    <Content Include="jslib\dumpvertexbuffer.js" />
+    <Content Include="jslib\dumpvertexbuffer.min.js" />
+    <Content Include="jslib\effectmanager.js" />
+    <Content Include="jslib\effectmanager.min.js" />
+    <Content Include="jslib\floor.js" />
+    <Content Include="jslib\floor.min.js" />
+    <Content Include="jslib\fontmanager.js" />
+    <Content Include="jslib\fontmanager.min.js" />
+    <Content Include="jslib\forwardrendering.js" />
+    <Content Include="jslib\forwardrendering.min.js" />
+    <Content Include="jslib\geometry.js" />
+    <Content Include="jslib\geometry.min.js" />
+    <Content Include="jslib\indexbuffermanager.js" />
+    <Content Include="jslib\indexbuffermanager.min.js" />
+    <Content Include="jslib\light.js" />
+    <Content Include="jslib\light.min.js" />
+    <Content Include="jslib\loadingscreen.js" />
+    <Content Include="jslib\loadingscreen.min.js" />
+    <Content Include="jslib\material.js" />
+    <Content Include="jslib\material.min.js" />
+    <Content Include="jslib\mouseforces.js" />
+    <Content Include="jslib\mouseforces.min.js" />
+    <Content Include="jslib\networklatencysimulator.js" />
+    <Content Include="jslib\networklatencysimulator.min.js" />
+    <Content Include="jslib\observer.js" />
+    <Content Include="jslib\observer.min.js" />
+    <Content Include="jslib\physics2ddebugdraw.js" />
+    <Content Include="jslib\physics2ddebugdraw.min.js" />
+    <Content Include="jslib\physics2ddevice.js" />
+    <Content Include="jslib\physics2ddevice.min.js" />
+    <Content Include="jslib\physicsmanager.js" />
+    <Content Include="jslib\physicsmanager.min.js" />
+    <Content Include="jslib\posteffects.js" />
+    <Content Include="jslib\posteffects.min.js" />
+    <Content Include="jslib\renderingcommon.js" />
+    <Content Include="jslib\renderingcommon.min.js" />
+    <Content Include="jslib\requesthandler.js" />
+    <Content Include="jslib\requesthandler.min.js" />
+    <Content Include="jslib\resourceloader.js" />
+    <Content Include="jslib\resourceloader.min.js" />
+    <Content Include="jslib\scene.js" />
+    <Content Include="jslib\scene.min.js" />
+    <Content Include="jslib\scenedebugging.js" />
+    <Content Include="jslib\scenedebugging.min.js" />
+    <Content Include="jslib\scenenode.js" />
+    <Content Include="jslib\scenenode.min.js" />
+    <Content Include="jslib\services\.mkdir" />
+    <Content Include="jslib\services\badgemanager.js" />
+    <Content Include="jslib\services\badgemanager.min.js" />
+    <Content Include="jslib\services\gameprofilemanager.js" />
+    <Content Include="jslib\services\gameprofilemanager.min.js" />
+    <Content Include="jslib\services\gamesession.js" />
+    <Content Include="jslib\services\gamesession.min.js" />
+    <Content Include="jslib\services\leaderboardmanager.js" />
+    <Content Include="jslib\services\leaderboardmanager.min.js" />
+    <Content Include="jslib\services\mappingtable.js" />
+    <Content Include="jslib\services\mappingtable.min.js" />
+    <Content Include="jslib\services\multiplayersession.js" />
+    <Content Include="jslib\services\multiplayersession.min.js" />
+    <Content Include="jslib\services\multiplayersessionmanager.js" />
+    <Content Include="jslib\services\multiplayersessionmanager.min.js" />
+    <Content Include="jslib\services\osdlib.js" />
+    <Content Include="jslib\services\osdlib.min.js" />
+    <Content Include="jslib\services\sessiontoken.js" />
+    <Content Include="jslib\services\sessiontoken.min.js" />
+    <Content Include="jslib\services\storemanager.js" />
+    <Content Include="jslib\services\storemanager.min.js" />
+    <Content Include="jslib\services\turbulenzbridge.js" />
+    <Content Include="jslib\services\turbulenzbridge.min.js" />
+    <Content Include="jslib\services\turbulenzservices.js" />
+    <Content Include="jslib\services\turbulenzservices.min.js" />
+    <Content Include="jslib\services\userdatamanager.js" />
+    <Content Include="jslib\services\userdatamanager.min.js" />
+    <Content Include="jslib\shadermanager.js" />
+    <Content Include="jslib\shadermanager.min.js" />
+    <Content Include="jslib\shadowmapping.js" />
+    <Content Include="jslib\shadowmapping.min.js" />
+    <Content Include="jslib\simplerendering.js" />
+    <Content Include="jslib\simplerendering.min.js" />
+    <Content Include="jslib\soundmanager.js" />
+    <Content Include="jslib\soundmanager.min.js" />
+    <Content Include="jslib\textureeffects.js" />
+    <Content Include="jslib\textureeffects.min.js" />
+    <Content Include="jslib\texturemanager.js" />
+    <Content Include="jslib\texturemanager.min.js" />
+    <Content Include="jslib\utilities.js" />
+    <Content Include="jslib\utilities.min.js" />
+    <Content Include="jslib\vertexbuffermanager.js" />
+    <Content Include="jslib\vertexbuffermanager.min.js" />
+    <Content Include="jslib\vmath.js" />
+    <Content Include="jslib\vmath.min.js" />
+    <Content Include="jslib\webgl\.mkdir" />
+    <Content Include="jslib\webgl\ddsloader.js" />
+    <Content Include="jslib\webgl\ddsloader.min.js" />
+    <Content Include="jslib\webgl\graphicsdevice.js" />
+    <Content Include="jslib\webgl\graphicsdevice.min.js" />
+    <Content Include="jslib\webgl\inputdevice.js" />
+    <Content Include="jslib\webgl\inputdevice.min.js" />
+    <Content Include="jslib\webgl\networkdevice.js" />
+    <Content Include="jslib\webgl\networkdevice.min.js" />
+    <Content Include="jslib\webgl\physicsdevice.js" />
+    <Content Include="jslib\webgl\physicsdevice.min.js" />
+    <Content Include="jslib\webgl\sounddevice.js" />
+    <Content Include="jslib\webgl\sounddevice.min.js" />
+    <Content Include="jslib\webgl\soundtarloader.js" />
+    <Content Include="jslib\webgl\soundtarloader.min.js" />
+    <Content Include="jslib\webgl\tarloader.js" />
+    <Content Include="jslib\webgl\tarloader.min.js" />
+    <Content Include="jslib\webgl\tgaloader.js" />
+    <Content Include="jslib\webgl\tgaloader.min.js" />
+    <Content Include="jslib\webgl\touch.js" />
+    <Content Include="jslib\webgl\touch.min.js" />
+    <Content Include="jslib\webgl\touchevent.js" />
+    <Content Include="jslib\webgl\touchevent.min.js" />
+    <Content Include="jslib\webgl\turbulenzengine.js" />
+    <Content Include="jslib\webgl\turbulenzengine.min.js" />
+    <Content Include="default.htm" />
+    <Content Include="Scripts\qunit.js" />
+    <Content Include="Tests\HelloWorld.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\qunit.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HelloWorld.js.map">
+      <DependentUpon>HelloWorld.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>AirFair</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63815</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60334/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptIncludeComments>true</TypeScriptIncludeComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptIncludeComments>false</TypeScriptIncludeComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" />
+</Project>
