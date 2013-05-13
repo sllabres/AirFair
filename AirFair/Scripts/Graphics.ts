@@ -20,5 +20,5 @@ module Turbulenz {
                 this.graphicsDevice.endFrame();
             }
         }
-    }    
+    }
 }

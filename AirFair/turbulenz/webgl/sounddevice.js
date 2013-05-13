@@ -1157,4 +1157,3 @@ WebGLSoundDevice.create = function webGLSoundDeviceFn(params) {
     audio = null;
     return sd;
 };
-//@ sourceMappingURL=sounddevice.js.map

@@ -4827,4 +4827,3 @@ WebGLGraphicsDevice.create = function webGLGraphicsDeviceCreateFn(canvas, params
     video = null;
     return gd;
 };
-//@ sourceMappingURL=graphicsdevice.js.map

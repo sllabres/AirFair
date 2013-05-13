@@ -16,6 +16,13 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\TimerCallback.ts" />
+    <Content Include="Scripts\TimerCallback.js">
+      <DependentUpon>TimerCallback.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\TimerCallback.min.js">
+      <DependentUpon>TimerCallback.ts</DependentUpon>
+    </Content>
     <Content Include="Turbulenz\aabbtree.js" />
     <Content Include="Turbulenz\aabbtree.min.js" />
     <Content Include="Turbulenz\aabbtree.ts" />
@@ -248,38 +255,38 @@
     <Content Include="Turbulenz\webgl\turbulenzengine.js" />
     <Content Include="Turbulenz\webgl\turbulenzengine.min.js" />
     <Content Include="Turbulenz\webgl\turbulenzengine.ts" />
-    <TypeScriptCompile Include="AirFair\Game.ts" />
-    <Content Include="AirFair\Game.js">
+    <TypeScriptCompile Include="Scripts\Game.ts" />
+    <Content Include="Scripts\Game.js">
       <DependentUpon>Game.ts</DependentUpon>
     </Content>
-    <Content Include="AirFair\Game.min.js">
+    <Content Include="Scripts\Game.min.js">
       <DependentUpon>Game.ts</DependentUpon>
     </Content>
-    <TypeScriptCompile Include="AirFair\Graphics.ts" />
-    <Content Include="AirFair\Graphics.js">
+    <TypeScriptCompile Include="Scripts\Graphics.ts" />
+    <Content Include="Scripts\Graphics.js">
       <DependentUpon>Graphics.ts</DependentUpon>
     </Content>
-    <Content Include="AirFair\Graphics.min.js">
+    <Content Include="Scripts\Graphics.min.js">
       <DependentUpon>Graphics.ts</DependentUpon>
     </Content>
     <Content Include="Tests\Initialise.js" />
     <Content Include="Content\qunit.css" />
     <Content Include="default.htm" />
-    <Content Include="Scripts\qunit.js" />
+    <Content Include="Tests\qunit.js" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\qunit.d.ts" />
+    <Content Include="Tests\qunit.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AirFair\Game.js.map">
+    <Content Include="Scripts\Game.js.map">
       <DependentUpon>Game.ts</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AirFair\Graphics.js.map">
+    <Content Include="Scripts\Graphics.js.map">
       <DependentUpon>Graphics.ts</DependentUpon>
     </Content>
   </ItemGroup>
@@ -297,6 +304,11 @@
     <Content Include="Turbulenz\webgl\touch.js.map" />
     <Content Include="Turbulenz\webgl\touchevent.js.map" />
     <Content Include="Turbulenz\webgl\turbulenzengine.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\TimerCallback.js.map">
+      <DependentUpon>TimerCallback.ts</DependentUpon>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
