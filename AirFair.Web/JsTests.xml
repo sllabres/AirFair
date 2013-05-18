@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite name="C:\Development\AirFair\AirFair.Web\JsTests\Initialise.Tests.js" tests="2" failures="0" time="26">
+    <testcase name="Initialise Tests:When game started Then draw background called" />
+    <testcase name="Initialise Tests:When calling start Then callback called" />
+  </testsuite>
+</testsuites>

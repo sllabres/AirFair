@@ -1,0 +1,26 @@
+﻿<!--
+***********************************************************************************************
+
+***********************************************************************************************
+-->
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<PropertyGroup>
+    <CompileDependsOn>
+      $(CompileDependsOn);
+      RunJavaScriptTests;
+    </CompileDependsOn>
+  </PropertyGroup>
+
+  <Target Name="RunJavaScriptTests">
+  	<ItemGroup>
+        <JsTestFile Include="JsTests\*.Tests.js"/>
+    </ItemGroup>
+
+    <!-- <CreateItem Include="**\QUnit\*Test.html">
+      <Output ItemName="JsTests" TaskParameter="Include" />
+      /junit &quot;$(NUnitLogsDir)\%(JsTests.FileName)-test-results.xml&quot;
+    </CreateItem> -->
+    <Exec Command="&quot;..\Tools\Chutzpah\chutzpah.console.exe&quot; /file &quot;%(JsTestFile.Identity)&quot; /failOnScriptError /vsoutput /junit JsTests.xml" />    
+  </Target>  
+</Project>

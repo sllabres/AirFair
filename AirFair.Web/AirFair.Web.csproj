@@ -228,13 +228,13 @@
     <Content Include="Scripts\Graphics.min.js">
       <DependentUpon>Graphics.ts</DependentUpon>
     </Content>
-    <Content Include="Tests\Initialise.js" />
+    <Content Include="JsTests\Initialise.Tests.js" />
     <Content Include="Content\qunit.css" />
     <Content Include="default.htm" />
-    <Content Include="Tests\qunit.js" />
+    <Content Include="JsTests\qunit.js" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Tests\qunit.d.ts" />
+    <Content Include="JsTests\qunit.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -324,7 +324,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <PropertyGroup>
-    <RootNamespace>AirFair</RootNamespace>
+    <RootNamespace>AirFair.Web</RootNamespace>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
@@ -359,4 +359,5 @@
     <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
   </PropertyGroup>
   <Import Project="..\Tools\TypeScript\Microsoft.TypeScript.targets" />
+  <Import Project="..\Tools\Chutzpah\Chutzpah.targets" />
 </Project>
