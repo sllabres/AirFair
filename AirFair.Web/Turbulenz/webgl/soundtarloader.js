@@ -275,3 +275,4 @@ SoundTARLoader.create = function tgaLoaderFn(params) {
     }
     return loader;
 };
+//@ sourceMappingURL=soundtarloader.js.map

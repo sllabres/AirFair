@@ -6,7 +6,7 @@ module Turbulenz {
         graphicsDevice: GraphicsDevice;
 
         constructor(canvasElement: Element, enableDebug: bool) {
-            debug = enableDebug;
+            debug = enableDebug;            
             TurbulenzEngine = WebGLTurbulenzEngine.create({
                 canvas: canvasElement                
             });
