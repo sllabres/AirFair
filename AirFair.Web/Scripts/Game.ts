@@ -2,16 +2,27 @@
 
 module AirFair {
     export interface IDrawGraphics {
-        drawBackground();
+        drawBackground(colour: number[]);
     }
 
     export class Game {
+
+        private frameRate: number;
+        private updateProxy: () => void;
+
         constructor(private graphics: IDrawGraphics, private timerCallback: ICallback) {
+            this.frameRate = 1000 / 60;
+            this.updateProxy = () => {
+                this.update();
+            }
         }
 
-        start() {
-            this.graphics.drawBackground();
-            this.timerCallback.callback(null, null);
+        public start() {            
+            this.timerCallback.callback(this.updateProxy, this.frameRate);
+        }
+
+        private update() {
+            this.graphics.drawBackground([0,0,0,0]);
         }
     }
 }

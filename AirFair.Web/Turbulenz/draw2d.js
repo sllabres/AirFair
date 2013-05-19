@@ -1,5 +1,3 @@
-/* This file was generated from TypeScript source tslib/draw2d.ts */
-
 // Copyright (c) 2012 Turbulenz Limited
 /*global
 Draw2D: false
@@ -30,7 +28,7 @@ var Draw2DGroup = (function () {
     };
     return Draw2DGroup;
 })();
-
+;
 //
 // Draw2DSprite
 //
@@ -408,7 +406,7 @@ var Draw2DSprite = (function () {
     };
     return Draw2DSprite;
 })();
-
+;
 //
 // Used in rectangle draw routines to compute data to be pushed into
 // vertex buffers.
@@ -479,9 +477,9 @@ var Draw2DSpriteData = {
         return new Draw2D.floatArray(16);
     }
 };
-
-
-
+;
+;
+;
 var Draw2D = (function () {
     function Draw2D() {
         this.forceUpdate = false;
@@ -1878,7 +1876,7 @@ var Draw2D = (function () {
     };
     return Draw2D;
 })();
-
+;
 // Detect correct typed arrays
 ((function () {
     Draw2D.uint16Array = function (arg) {

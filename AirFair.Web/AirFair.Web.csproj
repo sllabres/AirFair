@@ -16,6 +16,7 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Assets\Sky.jpg" />
     <Content Include="Turbulenz\aabbtree.js" />
     <Content Include="Turbulenz\aabbtree.min.js" />
     <Content Include="Turbulenz\animation.js" />
@@ -228,7 +229,7 @@
     <Content Include="Scripts\Graphics.min.js">
       <DependentUpon>Graphics.ts</DependentUpon>
     </Content>
-    <Content Include="JsTests\Initialise.Tests.js" />
+    <Content Include="JsTests\Game.Tests.js" />
     <Content Include="Content\qunit.css" />
     <Content Include="default.htm" />
     <Content Include="JsTests\qunit.js" />
@@ -260,7 +261,7 @@
     <Content Include="Turbulenz\animationmanager.ts" />
     <Content Include="Turbulenz\assetcache.ts" />
     <Content Include="Turbulenz\assettracker.ts" />
-    <Content Include="Turbulenz\base.d.ts" />
+    <None Include="Turbulenz\base.d.ts" />
     <Content Include="Turbulenz\boxtree.ts" />
     <Content Include="Turbulenz\camera.ts" />
     <Content Include="Turbulenz\canvas.ts" />

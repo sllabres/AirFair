@@ -1307,4 +1307,3 @@ WebGLInputDevice.create = function webGLInputDeviceFn(canvas/*, params */ ) {
     id.webkit = (/WebKit/.test(navigator.userAgent));
     return id;
 };
-//@ sourceMappingURL=inputdevice.js.map
