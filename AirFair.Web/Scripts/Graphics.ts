@@ -9,8 +9,7 @@ module Turbulenz {
         sprite: Draw2DSprite;
         textureLoadProxy: (texture: Texture) => void;
 
-        constructor(canvasElement: Element, enableDebug: bool) {
-            //debug = enableDebug;            
+        constructor(canvasElement: Element, enableDebug: bool) {            
             TurbulenzEngine = WebGLTurbulenzEngine.create({
                 canvas: canvasElement                
             });

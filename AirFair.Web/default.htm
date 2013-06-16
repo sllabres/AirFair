@@ -12,10 +12,9 @@
     <script src="Turbulenz/draw2d.js"></script>
 </head>
 <body>
-    <body>    
-    <h1>Air Fair</h1>
+    <body>        
     <div id="content"></div>
-    <canvas id="canvas" width="800" height="400" style="border: 1px solid black;" />
+    <canvas id="canvas" width="800" height="400" />
 
     <script>
         var game = new AirFair.Game(new Turbulenz.Graphics(document.getElementById("canvas"), true), new Turbulenz.TimerCallback());

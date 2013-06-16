@@ -6,7 +6,6 @@ var Turbulenz;
     var Graphics = (function () {
         function Graphics(canvasElement, enableDebug) {
             var _this = this;
-            //debug = enableDebug;
             TurbulenzEngine = WebGLTurbulenzEngine.create({
                 canvas: canvasElement
             });
