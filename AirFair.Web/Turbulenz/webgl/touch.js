@@ -16,3 +16,4 @@ Touch.create = function touchCreateFn(params) {
     touch.rotationAngle = params.rotationAngle;
     return touch;
 };
+//@ sourceMappingURL=touch.js.map

@@ -247,3 +247,4 @@ TARLoader.create = function TarLoaderCreateFn(params) {
     }
     return loader;
 };
+//@ sourceMappingURL=tarloader.js.map

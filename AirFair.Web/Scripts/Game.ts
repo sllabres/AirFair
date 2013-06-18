@@ -5,6 +5,10 @@ module AirFair {
         drawBackground(colour: number[]);
     }
 
+    export interface ILoadTextures {
+        load(assetSrc: string);
+    }
+
     export class Game {
 
         private frameRate: number;

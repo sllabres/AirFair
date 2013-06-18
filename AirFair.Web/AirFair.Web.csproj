@@ -17,6 +17,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Assets\Sky.jpg" />
+    <Content Include="JsTests\EventObserver.Tests.js" />
+    <TypeScriptCompile Include="Scripts\EventObserver.ts" />
+    <Content Include="Scripts\EventObserver.js">
+      <DependentUpon>EventObserver.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\EventObserver.min.js">
+      <DependentUpon>EventObserver.ts</DependentUpon>
+    </Content>
     <Content Include="Turbulenz\aabbtree.js" />
     <Content Include="Turbulenz\aabbtree.min.js" />
     <Content Include="Turbulenz\animation.js" />
@@ -261,6 +269,9 @@
     <Content Include="Turbulenz\animationmanager.ts" />
     <Content Include="Turbulenz\assetcache.ts" />
     <Content Include="Turbulenz\assettracker.ts" />
+    <Content Include="Scripts\EventObserver.js.map">
+      <DependentUpon>EventObserver.ts</DependentUpon>
+    </Content>
     <None Include="Turbulenz\base.d.ts" />
     <Content Include="Turbulenz\boxtree.ts" />
     <Content Include="Turbulenz\camera.ts" />

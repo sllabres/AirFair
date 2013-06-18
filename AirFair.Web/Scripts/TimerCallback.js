@@ -10,3 +10,4 @@ var Turbulenz;
     })();
     Turbulenz.TimerCallback = TimerCallback;    
 })(Turbulenz || (Turbulenz = {}));
+//@ sourceMappingURL=TimerCallback.js.map
