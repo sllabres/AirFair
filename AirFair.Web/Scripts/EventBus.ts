@@ -1,5 +1,17 @@
 module AirFair {
-    export class EventObserver {
+    
+    export enum event {
+        drawBackground,
+        spriteCreated,
+        spriteLoadComplete
+    }
+
+    export interface IObserver {
+        notify(eventName: event, data: Object);
+        subscribe(eventName: event, callback: (object) => void);
+    }
+
+    export class EventBus implements IObserver {
         private subscribers;
 
         constructor() {

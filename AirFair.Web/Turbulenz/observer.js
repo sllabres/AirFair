@@ -1,5 +1,3 @@
-/* This file was generated from TypeScript source tslib/observer.ts */
-
 // Copyright (c) 2010-2011 Turbulenz Limited
 //
 // Observer
@@ -55,4 +53,5 @@ var Observer = (function () {
     };
     return Observer;
 })();
-
+;
+//@ sourceMappingURL=observer.js.map

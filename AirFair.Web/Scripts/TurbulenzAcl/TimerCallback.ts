@@ -1,6 +1,6 @@
-///<reference path="..\Turbulenz\webgl\turbulenzengine.ts"/>
+///<reference path="..\..\Turbulenz\webgl\turbulenzengine.ts"/>
 
-module Turbulenz {
+module TurbulenzAcl {
     export class TimerCallback implements AirFair.ICallback {        
         callback(method: () => void, milliseconds: number) {
             TurbulenzEngine.setInterval(method, milliseconds);

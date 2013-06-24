@@ -1,5 +1,3 @@
-/* This file was generated from TypeScript source tslib/texturemanager.ts */
-
 // Copyright (c) 2009-2012 Turbulenz Limited
 "use strict";
 /*global Reference: false*/
@@ -63,9 +61,9 @@ var TextureInstance = (function () {
     };
     return TextureInstance;
 })();
-
-
-
+;
+;
+;
 /**
 @class  Texture manager
 @private
@@ -779,4 +777,5 @@ var TextureManager = (function () {
     };
     return TextureManager;
 })();
-
+;
+//@ sourceMappingURL=texturemanager.js.map

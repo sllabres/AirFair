@@ -1,32 +1,37 @@
-///<reference path="TimerCallback.ts"/>
+///<reference path="TurbulenzAcl\TimerCallback.ts"/>
+///<reference path="EventBus.ts"/>
 
-module AirFair {
-    export interface IDrawGraphics {
-        drawBackground(colour: number[]);
-    }
-
-    export interface ILoadTextures {
-        load(assetSrc: string);
-    }
-
+module AirFair {    
     export class Game {
-
-        private frameRate: number;
         private updateProxy: () => void;
+        private loadCompleteProxy: () => void;
 
-        constructor(private graphics: IDrawGraphics, private timerCallback: ICallback) {
-            this.frameRate = 1000 / 60;
+        constructor(private observer: IObserver, private timerCallback: ICallback) {            
             this.updateProxy = () => {
                 this.update();
             }
+
+            this.loadCompleteProxy = () => {
+                this.start();
+            }
+
+            this.observer.subscribe(AirFair.event.spriteLoadComplete, this.loadCompleteProxy);
         }
 
-        public start() {            
-            this.timerCallback.callback(this.updateProxy, this.frameRate);
+        public start() {
+            var frameRate = 1000 / 60;     
+            this.timerCallback.callback(this.updateProxy, frameRate);
         }
 
-        private update() {
-            this.graphics.drawBackground([0,0,0,0]);
+        private update() {            
+            this.observer.notify(event.drawBackground, new Background("Sky"));
         }
+    }
+
+    export class Background {
+        public Name: string;
+        constructor(private name: string) {
+            this.Name = name;
+        }        
     }
 }

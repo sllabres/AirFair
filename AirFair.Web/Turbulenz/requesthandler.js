@@ -1,8 +1,6 @@
-/* This file was generated from TypeScript source tslib/requesthandler.ts */
-
-
-
-
+;
+;
+;
 var RequestHandler = (function () {
     function RequestHandler() {
         this.reasonConnectionLost = 0;
@@ -205,4 +203,5 @@ var RequestHandler = (function () {
     };
     return RequestHandler;
 })();
-
+;
+//@ sourceMappingURL=requesthandler.js.map

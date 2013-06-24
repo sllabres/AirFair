@@ -1,6 +1,6 @@
-///<reference path="..\Turbulenz\webgl\turbulenzengine.ts"/>
-var Turbulenz;
-(function (Turbulenz) {
+///<reference path="..\..\Turbulenz\webgl\turbulenzengine.ts"/>
+var TurbulenzAcl;
+(function (TurbulenzAcl) {
     var TimerCallback = (function () {
         function TimerCallback() { }
         TimerCallback.prototype.callback = function (method, milliseconds) {
@@ -8,6 +8,6 @@ var Turbulenz;
         };
         return TimerCallback;
     })();
-    Turbulenz.TimerCallback = TimerCallback;    
-})(Turbulenz || (Turbulenz = {}));
+    TurbulenzAcl.TimerCallback = TimerCallback;    
+})(TurbulenzAcl || (TurbulenzAcl = {}));
 //@ sourceMappingURL=TimerCallback.js.map

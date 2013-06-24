@@ -3,9 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <title>Air Fair</title> 
+    <script src="Scripts/EventBus.js" type="text/javascript"></script>
     <script src="Scripts/Game.js" type="text/javascript"></script>
-    <script src="Scripts/Graphics.js" type="text/javascript"></script>
-    <script src="Scripts/TimerCallback.js" type="text/javascript"></script>
+    <script src="Scripts/TurbulenzAcl/SpriteDrawing.js" type="text/javascript"></script>
+    <script src="Scripts/TurbulenzAcl/TimerCallback.js" type="text/javascript"></script>
+    <script src="Scripts/TurbulenzAcl/SpriteRepository.js" type="text/javascript"></script>
     <script src="Turbulenz/debug.js" type="text/javascript"></script>    
     <script src="Turbulenz/webgl/turbulenzengine.js" type="text/javascript"></script>    
     <script src="Turbulenz/webgl/graphicsdevice.js" type="text/javascript"></script>
@@ -16,8 +18,17 @@
     <canvas id="canvas" width="800" height="400" />
 
     <script>
-        var game = new AirFair.Game(new Turbulenz.Graphics(document.getElementById("canvas"), true), new Turbulenz.TimerCallback());
-            game.start();
+        
+        var eventBus = new AirFair.EventBus(),
+            TurbulenzEngine = WebGLTurbulenzEngine.create({ canvas: document.getElementById("canvas") }),
+            graphicsDevice = TurbulenzEngine.createGraphicsDevice({}),
+            draw2D = Draw2D.create({ graphicsDevice: this.graphicsDevice }),
+            spriteRepository = new TurbulenzAcl.SpriteRepository(eventBus);
+            spriteLoadingService = new TurbulenzAcl.SpriteLoadingService(draw2D, graphicsDevice, eventBus),
+            spriteDrawing = new TurbulenzAcl.SpriteDrawing(graphicsDevice, draw2D, spriteRepository, eventBus),
+            game = new AirFair.Game(eventBus, new TurbulenzAcl.TimerCallback());
+
+        spriteLoadingService.loadAll();        
     </script>
 </body>
 </html>

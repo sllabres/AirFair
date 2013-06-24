@@ -1,6 +1,4 @@
-/* This file was generated from TypeScript source tslib/utilities.ts */
-
-
+;
 var Utilities = {
     skipAsserts: //
     // assert
@@ -454,7 +452,7 @@ var Reference = (function () {
     };
     return Reference;
 })();
-
+;
 //
 // Profile
 //
@@ -654,3 +652,4 @@ JSProfiling.sort = function JSProfilingSortFn(array, propertyName, descending) {
         array.sort(sorterDescending);
     }
 };
+//@ sourceMappingURL=utilities.js.map

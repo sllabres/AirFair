@@ -18,99 +18,201 @@
   <ItemGroup>
     <Content Include="Assets\Sky.jpg" />
     <Content Include="JsTests\EventObserver.Tests.js" />
-    <TypeScriptCompile Include="Scripts\EventObserver.ts" />
-    <Content Include="Scripts\EventObserver.js">
-      <DependentUpon>EventObserver.ts</DependentUpon>
+    <TypeScriptCompile Include="Scripts\EventBus.ts" />
+    <Content Include="Scripts\EventBus.js">
+      <DependentUpon>EventBus.ts</DependentUpon>
     </Content>
-    <Content Include="Scripts\EventObserver.min.js">
-      <DependentUpon>EventObserver.ts</DependentUpon>
+    <Content Include="Scripts\EventBus.min.js">
+      <DependentUpon>EventBus.ts</DependentUpon>
     </Content>
+    <TypeScriptCompile Include="Scripts\TurbulenzAcl\TimerCallback.ts" />
+    <TypeScriptCompile Include="Scripts\TurbulenzAcl\SpriteRepository.ts" />
+    <Content Include="Scripts\TurbulenzAcl\SpriteRepository.js">
+      <DependentUpon>SpriteRepository.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\TurbulenzAcl\SpriteRepository.min.js">
+      <DependentUpon>SpriteRepository.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\TurbulenzAcl\TimerCallback.js">
+      <DependentUpon>TimerCallback.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\TurbulenzAcl\TimerCallback.min.js">
+      <DependentUpon>TimerCallback.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Scripts\Game.ts" />
+    <Content Include="Scripts\Game.js">
+      <DependentUpon>Game.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\Game.min.js">
+      <DependentUpon>Game.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Scripts\TurbulenzAcl\SpriteDrawing.ts" />
+    <Content Include="Scripts\TurbulenzAcl\Graphics.js">
+      <DependentUpon>SpriteDrawing.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\TurbulenzAcl\Graphics.min.js">
+      <DependentUpon>SpriteDrawing.ts</DependentUpon>
+    </Content>
+    <Content Include="JsTests\Game.Tests.js" />
+    <Content Include="Content\qunit.css" />
+    <Content Include="default.htm" />
+    <Content Include="JsTests\qunit.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JsTests\qunit.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\Game.js.map">
+      <DependentUpon>Game.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\TurbulenzAcl\Graphics.js.map">
+      <DependentUpon>SpriteDrawing.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\TurbulenzAcl\TimerCallback.js.map">
+      <DependentUpon>TimerCallback.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\EventBus.js.map">
+      <DependentUpon>EventBus.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Turbulenz\aabbtree.js" />
     <Content Include="Turbulenz\aabbtree.min.js" />
+    <Content Include="Turbulenz\aabbtree.ts" />
     <Content Include="Turbulenz\animation.js" />
     <Content Include="Turbulenz\animation.min.js" />
+    <Content Include="Turbulenz\animation.ts" />
     <Content Include="Turbulenz\animationmanager.js" />
     <Content Include="Turbulenz\animationmanager.min.js" />
+    <Content Include="Turbulenz\animationmanager.ts" />
     <Content Include="Turbulenz\assetcache.js" />
     <Content Include="Turbulenz\assetcache.min.js" />
+    <Content Include="Turbulenz\assetcache.ts" />
     <Content Include="Turbulenz\assettracker.js" />
     <Content Include="Turbulenz\assettracker.min.js" />
+    <Content Include="Turbulenz\assettracker.ts" />
+    <Content Include="Turbulenz\base.d.ts" />
     <Content Include="Turbulenz\boxtree.js" />
     <Content Include="Turbulenz\boxtree.min.js" />
+    <Content Include="Turbulenz\boxtree.ts" />
     <Content Include="Turbulenz\camera.js" />
     <Content Include="Turbulenz\camera.min.js" />
+    <Content Include="Turbulenz\camera.ts" />
     <Content Include="Turbulenz\canvas.js" />
     <Content Include="Turbulenz\canvas.min.js" />
+    <Content Include="Turbulenz\canvas.ts" />
     <Content Include="Turbulenz\capturegraphicsdevice.js" />
     <Content Include="Turbulenz\capturegraphicsdevice.min.js" />
+    <Content Include="Turbulenz\capturegraphicsdevice.ts" />
     <Content Include="Turbulenz\charactercontroller.js" />
     <Content Include="Turbulenz\charactercontroller.min.js" />
+    <Content Include="Turbulenz\charactercontroller.ts" />
     <Content Include="Turbulenz\debug.js" />
-    <Content Include="Turbulenz\debug.js.map" />
     <Content Include="Turbulenz\debug.min.js" />
+    <Content Include="Turbulenz\debug.ts" />
     <Content Include="Turbulenz\debuggingtools.js" />
     <Content Include="Turbulenz\debuggingtools.min.js" />
+    <Content Include="Turbulenz\debuggingtools.ts" />
     <Content Include="Turbulenz\defaultrendering.js" />
     <Content Include="Turbulenz\defaultrendering.min.js" />
+    <Content Include="Turbulenz\defaultrendering.ts" />
     <Content Include="Turbulenz\deferredrendering.js" />
     <Content Include="Turbulenz\deferredrendering.min.js" />
+    <Content Include="Turbulenz\deferredrendering.ts" />
     <Content Include="Turbulenz\draw2d.js" />
     <Content Include="Turbulenz\draw2d.min.js" />
+    <Content Include="Turbulenz\draw2d.ts" />
     <Content Include="Turbulenz\drawprimitives.js" />
     <Content Include="Turbulenz\drawprimitives.min.js" />
+    <Content Include="Turbulenz\drawprimitives.ts" />
     <Content Include="Turbulenz\dumpindexbuffer.js" />
     <Content Include="Turbulenz\dumpindexbuffer.min.js" />
+    <Content Include="Turbulenz\dumpindexbuffer.ts" />
     <Content Include="Turbulenz\dumpshader.js" />
     <Content Include="Turbulenz\dumpshader.min.js" />
+    <Content Include="Turbulenz\dumpshader.ts" />
     <Content Include="Turbulenz\dumptexture.js" />
     <Content Include="Turbulenz\dumptexture.min.js" />
+    <Content Include="Turbulenz\dumptexture.ts" />
     <Content Include="Turbulenz\dumpvertexbuffer.js" />
     <Content Include="Turbulenz\dumpvertexbuffer.min.js" />
+    <Content Include="Turbulenz\dumpvertexbuffer.ts" />
     <Content Include="Turbulenz\effectmanager.js" />
     <Content Include="Turbulenz\effectmanager.min.js" />
+    <Content Include="Turbulenz\effectmanager.ts" />
     <Content Include="Turbulenz\external\webgl.d.ts" />
     <Content Include="Turbulenz\floor.js" />
     <Content Include="Turbulenz\floor.min.js" />
+    <Content Include="Turbulenz\floor.ts" />
     <Content Include="Turbulenz\fontmanager.js" />
     <Content Include="Turbulenz\fontmanager.min.js" />
+    <Content Include="Turbulenz\fontmanager.ts" />
     <Content Include="Turbulenz\forwardrendering.js" />
     <Content Include="Turbulenz\forwardrendering.min.js" />
+    <Content Include="Turbulenz\forwardrendering.ts" />
     <Content Include="Turbulenz\geometry.js" />
     <Content Include="Turbulenz\geometry.min.js" />
+    <Content Include="Turbulenz\geometry.ts" />
     <Content Include="Turbulenz\indexbuffermanager.js" />
     <Content Include="Turbulenz\indexbuffermanager.min.js" />
+    <Content Include="Turbulenz\indexbuffermanager.ts" />
     <Content Include="Turbulenz\light.js" />
     <Content Include="Turbulenz\light.min.js" />
+    <Content Include="Turbulenz\light.ts" />
     <Content Include="Turbulenz\loadingscreen.js" />
     <Content Include="Turbulenz\loadingscreen.min.js" />
+    <Content Include="Turbulenz\loadingscreen.ts" />
     <Content Include="Turbulenz\material.js" />
     <Content Include="Turbulenz\material.min.js" />
+    <Content Include="Turbulenz\material.ts" />
     <Content Include="Turbulenz\mouseforces.js" />
     <Content Include="Turbulenz\mouseforces.min.js" />
+    <Content Include="Turbulenz\mouseforces.ts" />
     <Content Include="Turbulenz\networklatencysimulator.js" />
     <Content Include="Turbulenz\networklatencysimulator.min.js" />
+    <Content Include="Turbulenz\networklatencysimulator.ts" />
     <Content Include="Turbulenz\observer.js" />
     <Content Include="Turbulenz\observer.min.js" />
+    <Content Include="Turbulenz\observer.ts" />
     <Content Include="Turbulenz\physics2ddebugdraw.js" />
     <Content Include="Turbulenz\physics2ddebugdraw.min.js" />
+    <Content Include="Turbulenz\physics2ddebugdraw.ts" />
     <Content Include="Turbulenz\physics2ddevice.js" />
     <Content Include="Turbulenz\physics2ddevice.min.js" />
+    <Content Include="Turbulenz\physics2ddevice.ts" />
     <Content Include="Turbulenz\physicsmanager.js" />
     <Content Include="Turbulenz\physicsmanager.min.js" />
+    <Content Include="Turbulenz\physicsmanager.ts" />
     <Content Include="Turbulenz\posteffects.js" />
     <Content Include="Turbulenz\posteffects.min.js" />
+    <Content Include="Turbulenz\posteffects.ts" />
     <Content Include="Turbulenz\renderingcommon.js" />
     <Content Include="Turbulenz\renderingcommon.min.js" />
+    <Content Include="Turbulenz\renderingcommon.ts" />
     <Content Include="Turbulenz\requesthandler.js" />
     <Content Include="Turbulenz\requesthandler.min.js" />
+    <Content Include="Turbulenz\requesthandler.ts" />
     <Content Include="Turbulenz\resourceloader.js" />
     <Content Include="Turbulenz\resourceloader.min.js" />
+    <Content Include="Turbulenz\resourceloader.ts" />
     <Content Include="Turbulenz\scene.js" />
     <Content Include="Turbulenz\scene.min.js" />
+    <Content Include="Turbulenz\scene.ts" />
     <Content Include="Turbulenz\scenedebugging.js" />
     <Content Include="Turbulenz\scenedebugging.min.js" />
+    <Content Include="Turbulenz\scenedebugging.ts" />
     <Content Include="Turbulenz\scenenode.js" />
     <Content Include="Turbulenz\scenenode.min.js" />
+    <Content Include="Turbulenz\scenenode.ts" />
     <Content Include="Turbulenz\services\badgemanager.js" />
     <Content Include="Turbulenz\services\badgemanager.min.js" />
     <Content Include="Turbulenz\services\badgemanager.ts" />
@@ -153,177 +255,86 @@
     <Content Include="Turbulenz\services\userdatamanager.ts" />
     <Content Include="Turbulenz\shadermanager.js" />
     <Content Include="Turbulenz\shadermanager.min.js" />
+    <Content Include="Turbulenz\shadermanager.ts" />
     <Content Include="Turbulenz\shadowmapping.js" />
     <Content Include="Turbulenz\shadowmapping.min.js" />
+    <Content Include="Turbulenz\shadowmapping.ts" />
     <Content Include="Turbulenz\simplerendering.js" />
     <Content Include="Turbulenz\simplerendering.min.js" />
+    <Content Include="Turbulenz\simplerendering.ts" />
     <Content Include="Turbulenz\soundmanager.js" />
     <Content Include="Turbulenz\soundmanager.min.js" />
+    <Content Include="Turbulenz\soundmanager.ts" />
     <Content Include="Turbulenz\textureeffects.js" />
     <Content Include="Turbulenz\textureeffects.min.js" />
+    <Content Include="Turbulenz\textureeffects.ts" />
     <Content Include="Turbulenz\texturemanager.js" />
     <Content Include="Turbulenz\texturemanager.min.js" />
+    <Content Include="Turbulenz\texturemanager.ts" />
+    <Content Include="Turbulenz\turbulenz.d.ts" />
     <Content Include="Turbulenz\utilities.js" />
     <Content Include="Turbulenz\utilities.min.js" />
+    <Content Include="Turbulenz\utilities.ts" />
     <Content Include="Turbulenz\vertexbuffermanager.js" />
     <Content Include="Turbulenz\vertexbuffermanager.min.js" />
+    <Content Include="Turbulenz\vertexbuffermanager.ts" />
     <Content Include="Turbulenz\vmath.js" />
-    <Content Include="Turbulenz\vmath.js.map" />
     <Content Include="Turbulenz\vmath.min.js" />
+    <Content Include="Turbulenz\vmath.ts" />
     <Content Include="Turbulenz\webgl\ddsloader.js" />
-    <Content Include="Turbulenz\webgl\ddsloader.js.map" />
     <Content Include="Turbulenz\webgl\ddsloader.min.js" />
     <Content Include="Turbulenz\webgl\ddsloader.ts" />
     <Content Include="Turbulenz\webgl\graphicsdevice.js" />
-    <Content Include="Turbulenz\webgl\graphicsdevice.js.map" />
     <Content Include="Turbulenz\webgl\graphicsdevice.min.js" />
     <Content Include="Turbulenz\webgl\graphicsdevice.ts" />
     <Content Include="Turbulenz\webgl\inputdevice.js" />
-    <Content Include="Turbulenz\webgl\inputdevice.js.map" />
     <Content Include="Turbulenz\webgl\inputdevice.min.js" />
     <Content Include="Turbulenz\webgl\inputdevice.ts" />
     <Content Include="Turbulenz\webgl\networkdevice.js" />
-    <Content Include="Turbulenz\webgl\networkdevice.js.map" />
     <Content Include="Turbulenz\webgl\networkdevice.min.js" />
     <Content Include="Turbulenz\webgl\networkdevice.ts" />
     <Content Include="Turbulenz\webgl\physicsdevice.js" />
     <Content Include="Turbulenz\webgl\physicsdevice.min.js" />
     <Content Include="Turbulenz\webgl\physicsdevice.ts" />
     <Content Include="Turbulenz\webgl\sounddevice.js" />
-    <Content Include="Turbulenz\webgl\sounddevice.js.map" />
     <Content Include="Turbulenz\webgl\sounddevice.min.js" />
     <Content Include="Turbulenz\webgl\sounddevice.ts" />
     <Content Include="Turbulenz\webgl\soundtarloader.js" />
-    <Content Include="Turbulenz\webgl\soundtarloader.js.map" />
     <Content Include="Turbulenz\webgl\soundtarloader.min.js" />
     <Content Include="Turbulenz\webgl\soundtarloader.ts" />
     <Content Include="Turbulenz\webgl\tarloader.js" />
-    <Content Include="Turbulenz\webgl\tarloader.js.map" />
     <Content Include="Turbulenz\webgl\tarloader.min.js" />
     <Content Include="Turbulenz\webgl\tarloader.ts" />
     <Content Include="Turbulenz\webgl\tgaloader.js" />
-    <Content Include="Turbulenz\webgl\tgaloader.js.map" />
     <Content Include="Turbulenz\webgl\tgaloader.min.js" />
     <Content Include="Turbulenz\webgl\tgaloader.ts" />
     <Content Include="Turbulenz\webgl\touch.js" />
-    <Content Include="Turbulenz\webgl\touch.js.map" />
     <Content Include="Turbulenz\webgl\touch.min.js" />
     <Content Include="Turbulenz\webgl\touch.ts" />
     <Content Include="Turbulenz\webgl\touchevent.js" />
-    <Content Include="Turbulenz\webgl\touchevent.js.map" />
     <Content Include="Turbulenz\webgl\touchevent.min.js" />
     <Content Include="Turbulenz\webgl\touchevent.ts" />
     <Content Include="Turbulenz\webgl\turbulenzengine.js" />
-    <Content Include="Turbulenz\webgl\turbulenzengine.js.map" />
     <Content Include="Turbulenz\webgl\turbulenzengine.min.js" />
-    <TypeScriptCompile Include="Scripts\TimerCallback.ts" />
-    <Content Include="Scripts\TimerCallback.js">
-      <DependentUpon>TimerCallback.ts</DependentUpon>
-    </Content>
-    <Content Include="Scripts\TimerCallback.min.js">
-      <DependentUpon>TimerCallback.ts</DependentUpon>
-    </Content>
-    <TypeScriptCompile Include="Scripts\Game.ts" />
-    <Content Include="Scripts\Game.js">
-      <DependentUpon>Game.ts</DependentUpon>
-    </Content>
-    <Content Include="Scripts\Game.min.js">
-      <DependentUpon>Game.ts</DependentUpon>
-    </Content>
-    <TypeScriptCompile Include="Scripts\Graphics.ts" />
-    <Content Include="Scripts\Graphics.js">
-      <DependentUpon>Graphics.ts</DependentUpon>
-    </Content>
-    <Content Include="Scripts\Graphics.min.js">
-      <DependentUpon>Graphics.ts</DependentUpon>
-    </Content>
-    <Content Include="JsTests\Game.Tests.js" />
-    <Content Include="Content\qunit.css" />
-    <Content Include="default.htm" />
-    <Content Include="JsTests\qunit.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="JsTests\qunit.d.ts" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Scripts\Game.js.map">
-      <DependentUpon>Game.ts</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Scripts\Graphics.js.map">
-      <DependentUpon>Graphics.ts</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Scripts\TimerCallback.js.map">
-      <DependentUpon>TimerCallback.ts</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Turbulenz\aabbtree.ts" />
-    <Content Include="Turbulenz\animation.ts" />
-    <Content Include="Turbulenz\animationmanager.ts" />
-    <Content Include="Turbulenz\assetcache.ts" />
-    <Content Include="Turbulenz\assettracker.ts" />
-    <Content Include="Scripts\EventObserver.js.map">
-      <DependentUpon>EventObserver.ts</DependentUpon>
-    </Content>
-    <None Include="Turbulenz\base.d.ts" />
-    <Content Include="Turbulenz\boxtree.ts" />
-    <Content Include="Turbulenz\camera.ts" />
-    <Content Include="Turbulenz\canvas.ts" />
-    <Content Include="Turbulenz\capturegraphicsdevice.ts" />
-    <Content Include="Turbulenz\charactercontroller.ts" />
-    <Content Include="Turbulenz\debug.ts" />
-    <Content Include="Turbulenz\debuggingtools.ts" />
-    <Content Include="Turbulenz\defaultrendering.ts" />
-    <Content Include="Turbulenz\deferredrendering.ts" />
-    <Content Include="Turbulenz\draw2d.ts" />
-    <Content Include="Turbulenz\drawprimitives.ts" />
-    <Content Include="Turbulenz\dumpindexbuffer.ts" />
-    <Content Include="Turbulenz\dumpshader.ts" />
-    <Content Include="Turbulenz\dumptexture.ts" />
-    <Content Include="Turbulenz\dumpvertexbuffer.ts" />
-    <Content Include="Turbulenz\effectmanager.ts" />
-    <Content Include="Turbulenz\floor.ts" />
-    <Content Include="Turbulenz\fontmanager.ts" />
-    <Content Include="Turbulenz\forwardrendering.ts" />
-    <Content Include="Turbulenz\geometry.ts" />
-    <Content Include="Turbulenz\indexbuffermanager.ts" />
-    <Content Include="Turbulenz\light.ts" />
-    <Content Include="Turbulenz\loadingscreen.ts" />
-    <Content Include="Turbulenz\material.ts" />
-    <Content Include="Turbulenz\mouseforces.ts" />
-    <Content Include="Turbulenz\networklatencysimulator.ts" />
-    <Content Include="Turbulenz\observer.ts" />
-    <Content Include="Turbulenz\physics2ddebugdraw.ts" />
-    <Content Include="Turbulenz\physics2ddevice.ts" />
-    <Content Include="Turbulenz\physicsmanager.ts" />
-    <Content Include="Turbulenz\posteffects.ts" />
-    <Content Include="Turbulenz\renderingcommon.ts" />
-    <Content Include="Turbulenz\requesthandler.ts" />
-    <Content Include="Turbulenz\resourceloader.ts" />
-    <Content Include="Turbulenz\scene.ts" />
-    <Content Include="Turbulenz\scenedebugging.ts" />
-    <Content Include="Turbulenz\scenenode.ts" />
-    <Content Include="Turbulenz\shadermanager.ts" />
-    <Content Include="Turbulenz\shadowmapping.ts" />
-    <Content Include="Turbulenz\simplerendering.ts" />
-    <Content Include="Turbulenz\soundmanager.ts" />
-    <Content Include="Turbulenz\textureeffects.ts" />
-    <Content Include="Turbulenz\texturemanager.ts" />
-    <Content Include="Turbulenz\turbulenz.d.ts" />
-    <Content Include="Turbulenz\utilities.ts" />
-    <Content Include="Turbulenz\vertexbuffermanager.ts" />
-    <Content Include="Turbulenz\vmath.ts" />
     <Content Include="Turbulenz\webgl\turbulenzengine.ts" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="web.config" />
+    <Content Include="Turbulenz\debug.js.map" />
+    <Content Include="Turbulenz\draw2d.js.map" />
+    <Content Include="Turbulenz\vmath.js.map" />
+    <Content Include="Turbulenz\webgl\ddsloader.js.map" />
+    <Content Include="Turbulenz\webgl\graphicsdevice.js.map" />
+    <Content Include="Turbulenz\webgl\inputdevice.js.map" />
+    <Content Include="Turbulenz\webgl\networkdevice.js.map" />
+    <Content Include="Turbulenz\webgl\sounddevice.js.map" />
+    <Content Include="Turbulenz\webgl\soundtarloader.js.map" />
+    <Content Include="Turbulenz\webgl\tarloader.js.map" />
+    <Content Include="Turbulenz\webgl\tgaloader.js.map" />
+    <Content Include="Turbulenz\webgl\touch.js.map" />
+    <Content Include="Turbulenz\webgl\touchevent.js.map" />
+    <Content Include="Turbulenz\webgl\turbulenzengine.js.map" />
+    <Content Include="Scripts\TurbulenzAcl\SpriteRepository.js.map">
+      <DependentUpon>SpriteRepository.ts</DependentUpon>
+    </Content>
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
