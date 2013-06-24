@@ -1,38 +1,23 @@
-///<reference path="..\Game.ts"/>
-///<reference path="..\EventBus.ts"/>
-///<reference path="SpriteRepository.ts"/>
-///<reference path="..\..\Turbulenz\draw2d.ts"/>
-///<reference path="..\..\Turbulenz\webgl\turbulenzengine.ts"/>
-var TurbulenzAcl;
-(function (TurbulenzAcl) {
-    var SpriteDrawing = (function () {
-        function SpriteDrawing(graphicsDevice, draw2D, spriteRepository, observer) {
-            this.graphicsDevice = graphicsDevice;
-            this.draw2D = draw2D;
-            this.spriteRepository = spriteRepository;
-            this.observer = observer;
-            var _this = this;
-            this.drawBackgroundProxy = function (background) {
-                _this.drawSprite(_this.spriteRepository.getBy());
-            };
-            this.observer.subscribe(AirFair.event.drawBackground, this.drawBackgroundProxy);
+// Module
+var Shapes;
+(function (Shapes) {
+    // Class
+    var Point = (function () {
+        // Constructor
+        function Point(x, y) {
+            this.x = x;
+            this.y = y;
         }
-        SpriteDrawing.prototype.drawSprite = function (sprite) {
-            if(this.graphicsDevice.beginFrame()) {
-                this.graphicsDevice.clear([
-                    0, 
-                    0, 
-                    0, 
-                    0
-                ], 1.0);
-                this.draw2D.begin();
-                this.draw2D.drawSprite(sprite);
-                this.draw2D.end();
-                this.graphicsDevice.endFrame();
-            }
+        Point.prototype.getDist = // Instance member
+        function () {
+            return Math.sqrt(this.x * this.x + this.y * this.y);
         };
-        return SpriteDrawing;
+        Point.origin = new Point(0, 0);
+        return Point;
     })();
-    TurbulenzAcl.SpriteDrawing = SpriteDrawing;    
-})(TurbulenzAcl || (TurbulenzAcl = {}));
+    Shapes.Point = Point;    
+})(Shapes || (Shapes = {}));
+// Local variables
+var p = new Shapes.Point(3, 4);
+var dist = p.getDist();
 //@ sourceMappingURL=SpriteDrawing.js.map

@@ -27,6 +27,10 @@
     </Content>
     <TypeScriptCompile Include="Scripts\TurbulenzAcl\TimerCallback.ts" />
     <TypeScriptCompile Include="Scripts\TurbulenzAcl\SpriteRepository.ts" />
+    <TypeScriptCompile Include="Scripts\TurbulenzAcl\SpriteDrawing.ts" />
+    <Content Include="Scripts\TurbulenzAcl\SpriteDrawing.js">
+      <DependentUpon>SpriteDrawing.ts</DependentUpon>
+    </Content>
     <Content Include="Scripts\TurbulenzAcl\SpriteRepository.js">
       <DependentUpon>SpriteRepository.ts</DependentUpon>
     </Content>
@@ -46,13 +50,6 @@
     <Content Include="Scripts\Game.min.js">
       <DependentUpon>Game.ts</DependentUpon>
     </Content>
-    <TypeScriptCompile Include="Scripts\TurbulenzAcl\SpriteDrawing.ts" />
-    <Content Include="Scripts\TurbulenzAcl\Graphics.js">
-      <DependentUpon>SpriteDrawing.ts</DependentUpon>
-    </Content>
-    <Content Include="Scripts\TurbulenzAcl\Graphics.min.js">
-      <DependentUpon>SpriteDrawing.ts</DependentUpon>
-    </Content>
     <Content Include="JsTests\Game.Tests.js" />
     <Content Include="Content\qunit.css" />
     <Content Include="default.htm" />
@@ -67,11 +64,6 @@
   <ItemGroup>
     <Content Include="Scripts\Game.js.map">
       <DependentUpon>Game.ts</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Scripts\TurbulenzAcl\Graphics.js.map">
-      <DependentUpon>SpriteDrawing.ts</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
