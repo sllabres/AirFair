@@ -26,16 +26,13 @@
       <DependentUpon>EventBus.ts</DependentUpon>
     </Content>
     <TypeScriptCompile Include="Scripts\TurbulenzAcl\TimerCallback.ts" />
-    <TypeScriptCompile Include="Scripts\TurbulenzAcl\SpriteRepository.ts" />
-    <TypeScriptCompile Include="Scripts\TurbulenzAcl\SpriteDrawing.ts" />
-    <Content Include="Scripts\TurbulenzAcl\SpriteDrawing.js">
-      <DependentUpon>SpriteDrawing.ts</DependentUpon>
+    <TypeScriptCompile Include="Scripts\TurbulenzAcl\SpriteDrawer.ts" />
+    <Content Include="Scripts\TurbulenzAcl\SpriteDrawer.js">
+      <DependentUpon>SpriteDrawer.ts</DependentUpon>
     </Content>
-    <Content Include="Scripts\TurbulenzAcl\SpriteRepository.js">
-      <DependentUpon>SpriteRepository.ts</DependentUpon>
-    </Content>
-    <Content Include="Scripts\TurbulenzAcl\SpriteRepository.min.js">
-      <DependentUpon>SpriteRepository.ts</DependentUpon>
+    <TypeScriptCompile Include="Scripts\TurbulenzAcl\SpriteLoader.ts" />
+    <Content Include="Scripts\TurbulenzAcl\SpriteLoader.js">
+      <DependentUpon>SpriteLoader.ts</DependentUpon>
     </Content>
     <Content Include="Scripts\TurbulenzAcl\TimerCallback.js">
       <DependentUpon>TimerCallback.ts</DependentUpon>
@@ -324,9 +321,6 @@
     <Content Include="Turbulenz\webgl\touch.js.map" />
     <Content Include="Turbulenz\webgl\touchevent.js.map" />
     <Content Include="Turbulenz\webgl\turbulenzengine.js.map" />
-    <Content Include="Scripts\TurbulenzAcl\SpriteRepository.js.map">
-      <DependentUpon>SpriteRepository.ts</DependentUpon>
-    </Content>
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
