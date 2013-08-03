@@ -13,7 +13,8 @@ var TurbulenzAcl;
             this.observer = observer;
             var _this = this;
             this.drawBackgroundProxy = function (background) {
-                _this.draw(_this.spriteRepository.getBy());
+                var sprite = _this.spriteRepository.getByName();
+                _this.draw(sprite);
             };
             this.observer.subscribe(AirFair.event.drawBackground, this.drawBackgroundProxy);
         }

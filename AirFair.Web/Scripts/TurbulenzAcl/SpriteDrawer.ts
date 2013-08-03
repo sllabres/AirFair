@@ -10,7 +10,8 @@ module TurbulenzAcl {
 
         constructor(private graphicsDevice: GraphicsDevice, private draw2D: Draw2D, private spriteRepository: SpriteRepository, private observer: AirFair.IObserver) {
             this.drawBackgroundProxy = (background: AirFair.Background) => {
-                this.draw(this.spriteRepository.getBy());
+                var sprite = this.spriteRepository.getByName();
+                this.draw(sprite);
             }
 
             this.observer.subscribe(AirFair.event.drawBackground, this.drawBackgroundProxy);

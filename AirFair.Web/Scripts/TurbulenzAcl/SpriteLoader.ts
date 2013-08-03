@@ -5,7 +5,7 @@
 
 module TurbulenzAcl {
     export class SpriteRepository {
-        private sprite;
+        private sprite: Draw2DSprite;
         private spriteCreatedProxy: (sprite: Draw2DSprite) => void;
 
         constructor(private observer: AirFair.IObserver) {
@@ -18,16 +18,16 @@ module TurbulenzAcl {
             this.observer.subscribe(AirFair.event.spriteCreated, this.spriteCreatedProxy);
         }
 
-        public getBy() {
+        public getByName(): Draw2DSprite {
             return this.sprite;
         }
     }
 
     export class SpriteLoader {
-        textureLoadProxy: (texture: Texture) => void;
+        backgroundLoadProxy: (texture: Texture) => void;
 
         constructor(private draw2D: Draw2D, private graphicsDevice: GraphicsDevice, private observer: AirFair.IObserver) {
-            this.textureLoadProxy = (texture: Texture) => {
+            this.backgroundLoadProxy = (texture: Texture) => {
                 if (texture) {
                     observer.notify(AirFair.event.spriteCreated, this.createSprite(texture));
                 }
@@ -57,7 +57,7 @@ module TurbulenzAcl {
             var texture = this.graphicsDevice.createTexture({
                 src: "Assets/Sky.jpg",
                 mipmaps: true,
-                onload: this.textureLoadProxy
+                onload: this.backgroundLoadProxy
             });
         }
     }

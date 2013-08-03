@@ -17,6 +17,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Assets\Sky.jpg" />
+    <Content Include="Construct\c2runtime.js" />
+    <Content Include="Construct\icon-114.png" />
+    <Content Include="Construct\icon-128.png" />
+    <Content Include="Construct\icon-16.png" />
+    <Content Include="Construct\icon-32.png" />
+    <Content Include="Construct\images\cityscape-sheet0.png" />
+    <Content Include="Construct\images\sky.png" />
+    <Content Include="Construct\images\taxi-sheet0.png" />
+    <Content Include="Construct\images\wall-sheet0.png" />
+    <Content Include="Construct\index.html" />
+    <Content Include="Construct\jquery-2.0.0.min.js" />
+    <Content Include="Construct\loading-logo.png" />
     <Content Include="JsTests\EventObserver.Tests.js" />
     <TypeScriptCompile Include="Scripts\EventBus.ts" />
     <Content Include="Scripts\EventBus.js">

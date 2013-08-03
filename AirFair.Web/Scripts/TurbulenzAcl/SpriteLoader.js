@@ -14,7 +14,7 @@ var TurbulenzAcl;
             };
             this.observer.subscribe(AirFair.event.spriteCreated, this.spriteCreatedProxy);
         }
-        SpriteRepository.prototype.getBy = function () {
+        SpriteRepository.prototype.getByName = function () {
             return this.sprite;
         };
         return SpriteRepository;
@@ -26,7 +26,7 @@ var TurbulenzAcl;
             this.graphicsDevice = graphicsDevice;
             this.observer = observer;
             var _this = this;
-            this.textureLoadProxy = function (texture) {
+            this.backgroundLoadProxy = function (texture) {
                 if(texture) {
                     observer.notify(AirFair.event.spriteCreated, _this.createSprite(texture));
                 }
@@ -61,7 +61,7 @@ var TurbulenzAcl;
             var texture = this.graphicsDevice.createTexture({
                 src: "Assets/Sky.jpg",
                 mipmaps: true,
-                onload: this.textureLoadProxy
+                onload: this.backgroundLoadProxy
             });
         };
         return SpriteLoader;
