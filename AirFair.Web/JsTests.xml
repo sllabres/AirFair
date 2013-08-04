@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite name="C:\Development\AirFair\AirFair.Web\JsTests\Game.Tests.js" tests="1" failures="0" time="30">
+  <testsuite name="C:\Development\AirFair\AirFair.Web\JsTests\Game.Tests.js" tests="1" failures="0" time="35">
     <testcase name="Given Game:When game started Then callback called" />
   </testsuite>
 </testsuites>
