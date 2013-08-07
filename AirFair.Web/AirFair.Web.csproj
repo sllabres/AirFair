@@ -17,6 +17,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Construct\c2runtime.js" />
+    <Content Include="Construct\channel.html" />
     <Content Include="Construct\icon-114.png" />
     <Content Include="Construct\icon-128.png" />
     <Content Include="Construct\icon-16.png" />

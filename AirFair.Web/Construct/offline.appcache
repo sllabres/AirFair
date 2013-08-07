@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1375632196
+#1375911980
 index.html
 c2runtime.js
 jquery-2.0.0.min.js
@@ -12,7 +12,13 @@ images\cityscape-sheet0.png
 images\building-sheet0.png
 images\passenger-sheet0.png
 images\passenger-sheet1.png
+images\passenger-sheet2.png
 images\sprite-sheet0.png
+images\landingpad-sheet0.png
+images\fuel-sheet0.png
+media\citytraffic0.ogg
+media\explosion0.ogg
+media\thruster0.ogg
 icon-16.png
 icon-32.png
 icon-114.png
