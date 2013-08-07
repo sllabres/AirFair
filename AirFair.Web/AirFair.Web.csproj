@@ -24,8 +24,11 @@
     <Content Include="Construct\icon-32.png" />
     <Content Include="Construct\images\building-sheet0.png" />
     <Content Include="Construct\images\cityscape-sheet0.png" />
+    <Content Include="Construct\images\fuel-sheet0.png" />
+    <Content Include="Construct\images\landingpad-sheet0.png" />
     <Content Include="Construct\images\passenger-sheet0.png" />
     <Content Include="Construct\images\passenger-sheet1.png" />
+    <Content Include="Construct\images\passenger-sheet2.png" />
     <Content Include="Construct\images\sky.png" />
     <Content Include="Construct\images\sprite-sheet0.png" />
     <Content Include="Construct\images\taxi-sheet0.png" />
@@ -324,7 +327,9 @@
     <Content Include="Turbulenz\webgl\turbulenzengine.js" />
     <Content Include="Turbulenz\webgl\turbulenzengine.min.js" />
     <Content Include="Turbulenz\webgl\turbulenzengine.ts" />
-    <Content Include="web.config" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Turbulenz\debug.js.map" />
     <Content Include="Turbulenz\draw2d.js.map" />
     <Content Include="Turbulenz\vmath.js.map" />
@@ -340,6 +345,7 @@
     <Content Include="Turbulenz\webgl\touchevent.js.map" />
     <Content Include="Turbulenz\webgl\turbulenzengine.js.map" />
     <Content Include="Construct\offline.appcache" />
+    <Content Include="Construct\media\explosion0.ogg" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
